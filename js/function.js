@@ -22,3 +22,28 @@ function setValueFormula (input1,input2,setValue1,setValue2){
     formulaA.innerText = setValue1;
     formulaB.innerText = setValue2;
 }
+
+//New Element Added 
+let value = 0;
+function newElementAdd (area , areaName){
+    const areaContainer = document.getElementById('table-container');
+    const tr = document.createElement('tr');
+    let fixedArea = area.toFixed(2);
+    value = value + 1;
+    tr.innerHTML = `
+    <td>${value}</td>
+    <td class="pl-2 text-sm w-8">${areaName}</td>
+    <td class="px-2 text-sm">${fixedArea}</td>
+    <td><button class="btn-primary">Convert to M<sup>2</sup></button></td>
+    `
+    if(isNaN(area)){
+        return;
+    }
+    areaContainer.appendChild(tr);
+}
+
+//Random Color
+
+randomColor = function(e) {
+    e.style.background =  "#" + (Math.random() * 0xFFFFFF<<0).toString(16);
+}
