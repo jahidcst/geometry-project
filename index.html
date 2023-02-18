@@ -34,7 +34,6 @@
     <!-- Main Section Start From Here---------- -->
     <main>
         <section class="max-w-7xl grid lg:grid-cols-4 gap-5 place-items-center lg:place-items-start  mx-auto py-10">
-
         <!-- Triangle Area------------- -->
         <div
         onmouseover="randomColor(this)" 
@@ -195,6 +194,44 @@
               Calculate
             </button>
         </div>
+        
+        <!-- Ellipse -->
+        <div onmouseover="randomColor(this)"  class="text-center space-y-3 w-72 p-7 border border-slate-200">
+            <div class="w-44 h-32 mx-auto">
+              <img class="w-full h-full" src="./images/ellipse.png" alt="" />
+            </div>
+            <h1 class="text-2xl font-semibold pt-4">Ellipse</h1>
+            <h1>
+              Formula (A) = π x<span id="ell-a">a</span> x
+              <span id="ell-b">b</span>
+            </h1>
+            <input
+              id="ellipse-first"
+              class="w-20 rounded-sm outline-none px-3 py-1 bg-slate-50"
+              placeholder="a"
+              type="text"
+            />
+            <span class="ml-1"> cm </span>
+            <input
+              id="ellipse-second"
+              placeholder="b"
+              class="w-20 bg-slate-50 outline-none px-3 py-1"
+              type="text"
+            />
+            <span class="ml-1"> cm </span>
+            <button
+              id="ellipse-btn"
+              class="bg-blue-500 py-2 px-20 rounded-lg text-white font-semibold hover:bg-blue-700 transition-all"
+            >
+              Calculate
+            </button>
+        </div>
+
+        <!-- Area side Start-->
+        
+
+
+
 
     </main>
 
