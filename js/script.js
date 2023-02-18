@@ -65,3 +65,9 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
       newElementAdd(area, "Ellipse");
   
   })
+
+  //blog button 
+
+document.getElementById('blog').addEventListener('click',function(){
+  window.location.href = 'blog.html'
+  })
