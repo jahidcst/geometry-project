@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genious</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .btn-primary{
+            background-color: rgb(96,165,250);
+          color: white;
+          padding: 5px 8px;
+          border-radius: 5px;
+          font-size: 12px;
+        }
+    </style>
 </head>
 <body>
     <header class="max-w-7xl mx-auto">
@@ -121,6 +130,41 @@
               Calculate
             </button>
         </div>
+
+
+        <!-- Rhombus Area---------------------- -->
+        <div onmouseover="randomColor(this)"  class="text-center space-y-3 w-72 p-7 border border-slate-200">
+            <div class="w-44 h-32 mx-auto">
+              <img class="w-full h-full" src="./images/rhombus.png" alt="" />
+            </div>
+            <h1 class="text-2xl font-semibold pt-4">Rhombus</h1>
+            <h1>
+              Formula (A) = 0.5 x <span id="rom-a">d<sub>1</sub></span> x
+              <span id="rom-b">d<sub>2</sub></span>
+            </h1>
+            <input
+              id="rhombus-first"
+              class="w-20 rounded-sm outline-none px-3 py-1 bg-slate-50"
+              type="text"
+              placeholder="d1"
+            />
+            <span class="ml-1"> cm </span>
+            <input
+              id="rhombus-second"
+              placeholder="d2"
+              class="w-20 bg-slate-50 outline-none px-3 py-1"
+              type="text"
+            />
+            <span class="ml-1"> cm </span>
+            <button
+              id="rhombus-btn"
+              class="bg-blue-500 py-2 px-20 rounded-lg text-white font-semibold hover:bg-blue-700 transition-all"
+            >
+              Calculate
+            </button>
+        </div>
+
+
     </main>
 
      <!-- script file -->
