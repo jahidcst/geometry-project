@@ -164,6 +164,37 @@
             </button>
         </div>
 
+        <!-- pentagon Area---------------------- -->
+        <div onmouseover="randomColor(this)"  class="text-center space-y-3 w-72 p-7 border border-slate-200">
+            <div class="w-44 h-32 mx-auto">
+              <img class="w-full h-full" src="./images/pentagon.png" alt="" />
+            </div>
+            <h1 class="text-2xl font-semibold pt-4">Pentagon</h1>
+            <h1>
+              Formula (A) = 0.5 x <span id="pen-a">p</span> x
+              <span id="pen-b">b</span>
+            </h1>
+            <input
+              id="pentagon-first"
+              class="w-20 rounded-sm outline-none px-3 py-1 bg-slate-50"
+              type="text"
+              placeholder="p"
+            />
+            <span class="ml-1"> cm </span>
+            <input
+              placeholder="b"
+              id="pentagon-second"
+              class="w-20 bg-slate-50 outline-none px-3 py-1"
+              type="text"
+            />
+            <span class="ml-1"> cm </span>
+            <button
+              id="pentagon-btn"
+              class="bg-blue-500 py-2 px-20 rounded-lg text-white font-semibold hover:bg-blue-700 transition-all"
+            >
+              Calculate
+            </button>
+        </div>
 
     </main>
 
